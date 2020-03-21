@@ -30,7 +30,6 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
     "bootstrap": "^4.4.1",
-    "imagemin-webpack-plugin": "^2.4.2",
     "jquery": "^3.4.1",
     "normalize.css": "^8.0.1",
     "popper.js": "^1.16.1",
