@@ -28,8 +28,8 @@ const paths = {
         dest: './production/assets/fonts'
     },
     images: {
-        src: './src/assets/images/*.{png,jpg,jpeg,gif,svg}',
-        dest: './production/assets/images'
+        src: './src/assets/images/**/*.{png,jpg,jpeg,gif,svg}',
+        dest: './production/assets/images/'
     }
 }
 

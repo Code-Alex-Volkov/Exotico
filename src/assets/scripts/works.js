@@ -1,4 +1,5 @@
-// Подключаем bootstrap
+'use strict'
+
 import script from "./modules/script"
 import bootstrap from "./../../../node_modules/bootstrap/dist/js/bootstrap"
 import FontAwesomeFree from "./../../../node_modules/@fortawesome/fontawesome-free/js/all"
