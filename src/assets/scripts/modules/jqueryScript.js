@@ -5,6 +5,6 @@ var $ = require("jquery");
 	window.$ = $;*/
 
 $(document).ready(function(){
-   alert('Приветик');
+   /*alert('Приветик');*/
 });
 
