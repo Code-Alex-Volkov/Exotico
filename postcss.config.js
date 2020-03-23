@@ -5,10 +5,8 @@ module.exports = {
             extensions: ".scss"
         }),
         require("autoprefixer"),
-        require("postcss-advanced-variables")({
-            variables: require("./src/assets/styles/variable")
-        }),
+        require("postcss-advanced-variables"),
         require("postcss-nested"),
-        require("cssnano")()
+        require("cssnano")
     ]
 };

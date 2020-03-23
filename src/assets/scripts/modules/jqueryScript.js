@@ -1,9 +1,10 @@
 // Подключаем jquery (https://github.com/webpack/webpack/issues/4258)
-import $ from 'jquery';
-window.jQuery = $;
-window.$ = $;
+var $ = require("jquery");
 
-/*$(document).ready(function(){
+	/*window.jQuery = $;
+	window.$ = $;*/
+
+$(document).ready(function(){
    alert('Приветик');
-});*/
+});
 

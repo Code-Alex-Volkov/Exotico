@@ -14,9 +14,8 @@ const paths = {
         src: './src/views/pages/*.html',
         dest: './production'
     },
-    styles: { 
-        main: './src/assets/styles/main.scss',
-        src: './src/assets/styles/**/*.scss',
+    styles: {
+        src: './src/assets/styles/main.scss',
         dest: './production/assets/styles'
     },
     scripts: {
@@ -63,7 +62,7 @@ function templates() {
 
 // scss
 function styles() {
-    return gulp.src(paths.styles.main)
+    return gulp.src(paths.styles.src)
         .pipe(sourcemaps.init())
         .pipe(postcss(require("./postcss.config")))
         .pipe(sourcemaps.write())

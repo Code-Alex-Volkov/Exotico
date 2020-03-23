@@ -1,10 +1,12 @@
-@import './../../../node_modules/normalize.css/normalize.css';
+@import 'normalize.css';
 @import './../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import './../../../node_modules/slick-carousel/slick/slick.css';
 @import './../../../node_modules/slick-carousel/slick/slick-theme.css';
 @import './../../../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
-@import './layout/reset.css';
-@import './layout/varible.scss';
-@import './layout/base.scss';
-@import './section/*.scss';
+@import './layout/_reset.scss';
+@import './layout/_variable.scss';
+@import './layout/_base.scss';
+
+@import './section/_header.scss';
+
