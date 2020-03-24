@@ -71,7 +71,7 @@
 							top: -5px;
 							left: 34px;
 						}
-						
+						z-index: 9;
 						position: absolute;
 						top: 100%;
 						left: 0;
@@ -111,6 +111,119 @@
 					}
 				}
 			}
+		}
+	}
+}
+
+.home_slider {
+	position: relative;
+	z-index: 1;
+	.slide {
+		padding-top: 100px;
+		background-position: center;
+		background-size: cover;
+		padding-bottom: 35px;
+		min-height: 674px;
+		box-sizing: border-box;
+		.slide_title {
+			@include fredoka_font();
+			text-align: center;
+			font-size: 68px;
+			color: $white;
+			text-shadow: 7px 7px 0 rgba(0,0,0,0.1);
+			line-height: 82px;
+		}
+		.slide_data {
+			display: flex;
+			align-items: center;
+			min-height: 410px;
+			.slide_decription {
+				width: 37%;
+				z-index: 2;
+				padding-left: 90px;
+				.data_type {
+					@include fredoka_font();
+					color: $yellow;
+					font-size: 24px;
+					line-height: 24px;
+					display: inline-block;
+					margin-bottom: 25px;
+				}
+				.data_description {
+					font-size: 12px;
+					color: $white;
+					line-height: 24px;
+					@include relaway_font();
+					font-weight: 500;
+					margin-bottom: 20px;
+				}
+				.data_cite {
+					@include ptserif_font();
+					color: $white;
+					line-height: 28px;
+					font-style: italic;
+					font-size: 23px;
+				}
+			}
+			.image_price {
+				width: 50%;
+				margin-left: -60px;
+				z-index: 1;
+				position: relative;
+				.slide_price {
+					position: absolute;
+					right: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 143px;
+					height: 143px;
+					background: #4ba321;
+					color: $yellow;
+					border-radius: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					span {
+						@include fredoka_font();
+						font-size: 54px;
+						text-shadow: 7px 7px 0 rgba(0,0,0,0.1);
+					}
+
+				}
+			}
+		}
+	}
+	.slick-dots {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateX(0) translateY(-20%);
+		padding-left: 40px;
+		display: flex;
+    	flex-direction: column;
+    	li {
+    		width: auto;
+    		height: auto;
+    		display: contents;
+    	}
+
+		button {
+			&::before {
+				content:"";
+			}
+			background: none;
+			border: none;
+			padding: 0;
+			margin: 0;
+			width: 10px;
+			height: 10px;
+			font-size: 0;
+			background: rgba(0,0,0,0.1);
+			margin-bottom: 24px;
+			border-radius: 100%;
+		}
+		.slick-active button {
+			background: rgba(0,0,0,0.4);
 		}
 	}
 }
