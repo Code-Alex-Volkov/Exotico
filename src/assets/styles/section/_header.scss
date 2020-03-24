@@ -227,3 +227,34 @@
 		}
 	}
 }
+
+.about_as {
+	padding: 0 0 50px 0;
+	box-sizing: border-box;
+	text-align: center;
+
+	.title {
+		color: #a07258;
+		font-size: 54px;
+		@include fredoka_font();
+		display: inline-block;
+		border-bottom: 1px solid rgba(160,114,88,0.3);
+		line-height: 90px;
+		margin-bottom: 25px;
+	}
+	.sub_title {
+		display: block;
+		color: #a07258;
+		font-size: 23px;
+		@include ptserif_font();
+		padding: 0 7%;
+		line-height: 1.4;
+		margin-bottom: 40px;
+	}
+	.description {
+		color: #a07258;
+		font-size: 12px;
+		padding: 0 12%;
+		line-height: 18px;
+	}
+}
