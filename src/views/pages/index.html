@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Exotico</title>
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|PT+Serif:400,700|Quicksand:400,700|Raleway:400,500&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Fredoka+One|PT+Serif:400,700|Quicksand:400,700|Raleway:400,500,700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/main.min.css">
 </head>
 <body class="homepage">
@@ -16,26 +20,27 @@
 				<div class="inner_header">
 					<a href="index.html" class="logo"><img src="assets/images/logo.png" alt="Logo"></a>
 					<nav class="main_navigation">
+						<i class="fas fa-bars"></i>
 						<ul>
 							<li><a href="#">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Product</a>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Наша продукция</a>
 								<ul class="sub_menu">
-									<li><a href="#">Fruits</a></li>
-									<li><a href="#">Vegetables</a></li>
-									<li><a href="#">Berries</a></li>
-									<li><a href="#">Other</a></li>
+									<li><a href="#">Фрукты</a></li>
+									<li><a href="#">Овощи</a></li>
+									<li><a href="#">Ягоды</a></li>
+									<li><a href="#">Другие</a></li>
 								</ul>
 							</li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Shop</a></li>
-							<li><a href="#">Gallery</a></li>
-							<li><a href="#">Contacts</a></li>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Магазин</a></li>
+							<li><a href="#">Галерея</a></li>
+							<li><a href="#">Контакты</a></li>
 						</ul>
 					</nav>
 					<div class="header_cart">
 						<i class="fas fa-shopping-basket"></i>
-						<a href="#" class="bascet">Bascet</a>
+						<a href="#" class="bascet">Корзина</a>
 						<span class="cart_counter">3</span> $780
 					</div>
 				</div>
@@ -44,11 +49,11 @@
 		<div class="home_slider">
 			<div class="slide" style="background-image: url(assets/images/slider/bg1.jpg);">
 				<div class="wrapper">
-					<h2 class="slide_title">treat your family </br>with fresh and juicy fruits! </h2>
+					<h2 class="slide_title">угостите свою семью <br> свежими овощами и фруктами! </h2>
 					<div class="slide_data">
 						<div class="slide_decription">
-							<span class="data_type">orange</span>
-							<p class="data_description">In an ideal world this website wouldn’t exist, a client would acknowledge the importance having web copy before the design starts. </p>
+							<span class="data_type">апельсины</span>
+							<p class="data_description">Апельсин - один из самых полезных фруктов, богаты витаминами и минералами. </p>
 							<span class="data_cite">Best treat when inviting friends or family!</span>
 						</div>
 						<div class="image_price">
@@ -63,7 +68,7 @@
 			</div>
 			<div class="slide" style="background-image: url(assets/images/slider/bg2.jpg);">
 				<div class="wrapper">
-					<h2 class="slide_title">treat your family </br>with fresh and juicy fruits! </h2>
+					<h2 class="slide_title">treat your family <br>with fresh and juicy fruits! </h2>
 					<div class="slide_data">
 						<div class="slide_decription">
 							<span class="data_type">apple</span>
@@ -83,7 +88,7 @@
 			</div>
 			<div class="slide" style="background-image: url(assets/images/slider/bg3.jpg);">
 				<div class="wrapper">
-					<h2 class="slide_title">treat your family </br>with fresh and juicy fruits! </h2>
+					<h2 class="slide_title">treat your family <br>with fresh and juicy fruits! </h2>
 					<div class="slide_data">
 						<div class="slide_decription">
 							<span class="data_type">punica</span>
@@ -110,16 +115,16 @@
 				<p class="description">In an ideal world this website wouldn’t exist, a client would acknowledge the importance having web copy before the design starts. Needless to say it’s very important, content is king and people are beginning to understand that.</p>
 			</div>
 		</section>
-		<section class="search_box">
+		<div class="search_box">
 			<div class="wrapper">
 				<form action="#" class="search">
 					<input type="text" name="search" placeholder="Find in catalog...">
 					<button type="submit" name="submit">Search<i class="fas fa-search"></i></button>
 				</form>
 			</div>
-		</section>
-		<section class="info_box">
-			<div class="wrapper">
+		</div>
+		<div class="container_shadow wrapper">
+			<section class="info_box">
 				<div class="info_align">
 					<div class="video_box">
 						<figure>
@@ -146,11 +151,8 @@
 						</div>
 					</div>
 				</div>
-				
-			</div>
-		</section>
-		<section class="shop_slider">
-			<div class="wrapper">
+			</section>
+			<section class="shop_slider">
 				<div class="top_title_line">
 					<div class="shop_slider_navigation"></div>
 					<h3 class="shop_box_title">best offers</h3>
@@ -212,71 +214,194 @@
 						<a href="#" class="item_button"><i class="fas fa-shopping-basket"></i> buy</a>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="information_box">
-			<div class="wrapper">
+			</section>
+			<section class="information_box">
 				<div class="banana_box">
 					<h3 class="title_box">experience</h3>
 					<p class="description">However, back over in reality some project schedules and  with the web copy, we want you think about how numbers</p>
 					<a href="#" class="info_link">see more ></a>
 				</div>
-			</div>
-		</section>
-		<section class="blog_testimonials">
-			<div class="wrapper">
+			</section>
+			<section class="blog_testimonials">
 				<div class="blog_container">
 					<div class="left_blog">
 						<h3 class="blog_box_title">blog</h3>
 						<form action="#">
 							<label for="search">Subscribe for our blog</label>
-							<div class="custom_search"><input type="text" name="search" id="search"><i class="fas fa-check"></i></div>
+							<div class="custom_search">
+								<input type="text" placeholder="Your e-mail" name="search" id="search">
+								<button type="submit" class="submit"><i class="fas fa-check"></i></button>	
+							</div>
 						</form>
 						<div class="blog_list">
 							<article>
-								<img src="assets/images/blog/img1.jpg" alt="#" />
+								<a href="#"><img src="assets/images/blog/img1.jpg" alt="#" /></a>
 								<div class="blogpost_info">
 									<span class="post_date"><i class="far fa-calendar"></i> 25 Mar 2020</span>
 									<span class="post_comments"><i class="far fa-comment"></i> 18</span>
 								</div>
-								<h4 class="post_title">Rangers review presents stark picture</h4>
+								<h4 class="post_title"><a href="#">Rangers review presents stark picture</a></h4>
 							</article>
 
 							<article>
-								<img src="assets/images/blog/img1.jpg" alt="#" />
+								<a href="#"><img src="assets/images/blog/img1.jpg" alt="#" /></a>
 								<div class="blogpost_info">
 									<span class="post_date"><i class="far fa-calendar"></i> 25 Mar 2020</span>
 									<span class="post_comments"><i class="far fa-comment"></i> 18</span>
 								</div>
-								<h4 class="post_title">Rangers review presents stark picture</h4>
+								<h4 class="post_title"><a href="#">Rangers review presents stark picture</a></h4>
 							</article>
 						</div>
 					</div>
 					<div class="right_testimonials">
 						<div class="testimonial_tab_container">
-							<div class="tab-1">
+							<div class="tab-item tab-1">
 								<h5 class="testimonial_title">Andrea Williams</h5>
-								<span class="testimonial_address">USA, New York, 3174 Groveland Terrace</span>
+								<span class="testimonial_address"><i class="fas fa-map-marker-alt"></i>USA, New York, 3174 Groveland Terrace</span>
 								<span class="cite">There are many variations of passages of Lorem Ipsum available but the domised words which don't look even slightly believable.</span>
 								<div class="testimonial_gallegy">
-									<a href="#"><img src="assets/images/testimonial/img1.jpg" alt="#"></a>
-									<a href="#"><img src="assets/images/testimonial/img2.jpg" alt="#"></a>
-									<a href="#"><img src="assets/images/testimonial/img3.jpg" alt="#"></a>
-									<a href="#"><img src="assets/images/testimonial/img4.jpg" alt="#"></a>
+									<a class="testy_gallery" href="assets/images/testimonial/img1.jpg"><img src="assets/images/testimonial/img1.jpg" alt="#"></a>
+									<a class="testy_gallery" href="assets/images/testimonial/img2.jpg"><img src="assets/images/testimonial/img2.jpg" alt="#"></a>
+									<a class="testy_gallery" href="assets/images/testimonial/img3.jpg"><img src="assets/images/testimonial/img3.jpg" alt="#"></a>
+									<a class="testy_gallery" href="assets/images/testimonial/img4.jpg"><img src="assets/images/testimonial/img4.jpg" alt="#"></a>
 								</div>
 								<p class="testimonial_description">
 									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
 								</p>
 							</div>
 						</div>
+
+						<div class="testimonial_slider_box">
+							<div class="left_arrow">
+								<div class="left"><i class="fas fa-arrow-left"></i></div>
+							</div>
+
+							<div class="testimonials_carousel">
+								<div class="person active">
+									<img src="assets/images/testimonial/team1.png" alt="#" />
+									<h6 class="testimonial_name">Andrea Williams</h6>
+									<span class="address">USA, New York</span>
+								</div>
+								<div class="person">
+									<img src="assets/images/testimonial/team2.png" alt="#" />
+									<h6 class="testimonial_name">Bernard Martin</h6>
+									<span class="address">USA, Chicago</span>
+								</div>
+								<div class="person">
+									<img src="assets/images/testimonial/team3.png" alt="#" />
+									<h6 class="testimonial_name">Abigail Meyer</h6>
+									<span class="address">German, Berlin</span>
+								</div>
+							</div>
+							
+							<div class="right_arrow">
+								<div class="right"><i class="fas fa-arrow-right"></i></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<section class="adds_box">
+			<div class="wrapper">
+				<div class="three_boxes">
+					<div class="item item-1">
+						<h6 class="adds_title">fruits</h6>
+						<div class="link">
+							<a href="#" class="adds_link">see more ›</a>
+						</div>
+					</div>
+					<div class="item item-2">
+						<h6 class="adds_title">vegetablse</h6>
+						<div class="link">
+							<a href="#" class="adds_link">see more ›</a>
+						</div>
+					</div>
+					<div class="item item-3">
+						<h6 class="adds_title">berries</h6>
+						<div class="link">
+							<a href="#" class="adds_link">see more ›</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
+		<section class="top_footer">
+			<div class="wrapper">
+				<div class="footer_container">
+					<div class="navigation_box">
+						<div class="navigation_one">
+							<h6 class="widget_title">support</h6>
+							<nav>
+								<ul>
+									<li><a href="#">Terms of Service</a></li>
+									<li><a href="#">Security</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="#">Sitemap</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="navigation_two">
+							<h6 class="widget_title">for users</h6>
+							<nav>
+								<ul>
+									<li><a href="#">The best solutions</a></li>
+									<li><a href="#">Special offers</a></li>
+									<li><a href="#">Quality control</a></li>
+									<li><a href="#">Services</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="contacts_box">
+						<h6 class="widget_title">contacts</h6>
+						<a href="tel:8002345678" class="phone">800 <strong>	234-56-78</strong></a>
+						<a href="mailto:info@website.com">info@website.com</a>
+						<span class="address"><i class="fas fa-map-marker-alt"></i><strong>Spain,</strong> Madrid, 4753 Forth St</span>
+					</div>
+					<div class="twitter_box">
+						<h6 class="widget_title"><i class="fab fa-twitter"></i>lates tweets</h6>
+						<div class="tweet_slider">
+							<div class="arrows"></div>
+							<div class="content_slider_tweeter">
+								<div>
+									<p>The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
+									<span class="autor"><a href="#">@Exotico</a></span>
+									<span class="time">3 hours ago</span>
+								</div>
+								<div>
+									<p>The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
+									<span class="autor"><a href="#">@Exotico</a></span>
+									<span class="time">3 hours ago</span>
+								</div>
+								<div>
+									<p>The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
+									<span class="autor"><a href="#">@Exotico</a></span>
+									<span class="time">3 hours ago</span>
+								</div>								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 	</div>
-	<footer>
+	<footer class="footer">
 		<div class="wrapper">
-			
+			<nav class="footer_navigation">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">Gallery</a></li>
+					<li><a href="#">Contacts</a></li>
+				</ul>
+			</nav>
 		</div>
 	</footer>
 	<script src="assets/scripts/vendors.bundle.js"></script>

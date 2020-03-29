@@ -37,6 +37,41 @@ $(document).ready(function(){
 		});
 	}
 
+	/*Popup Video*/
+   if ($('.testy_gallery').length) {
+   	$('.testy_gallery').magnificPopup({
+		  type: 'image',
+		  closeOncontentClick: true,
+		  image: {
+		  	verticalFit: true
+		  }
+		});
+   }
+
+   /*twitter Slider*/
+	if ($('.content_slider_tweeter').length) {
+		$('.content_slider_tweeter').slick({
+			vertical: true,
+	   	appendArrows: $('.tweet_slider .arrows'),
+		  	prevArrow: "<span class=\"up\"><i class=\"fas fa-arrow-up\"></i></span>",
+		  	nextArrow: "<span class=\"down\"><i class=\"fas fa-arrow-down\"></i></span>"
+	   });
+	}
+
+	//Responsive menu
+	if ($('.fa-bars').length) {
+		$('.fa-bars').on('click', function () {
+			$('.header_top .inner_header nav > ul').show();
+			$(this).hide();
+			$('fa-times').show();
+			
+		});
+		$('.fa-times').on('click', function () {
+			$('.header_top .inner_header nav > ul').hide();
+			$(this).hide();
+			$('fa-bars').show();
+		});
+	}
 	
 
 });
