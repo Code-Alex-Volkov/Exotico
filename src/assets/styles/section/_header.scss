@@ -832,6 +832,7 @@
 						img {
 							border-radius: 100%;
 							margin-bottom: 15px;
+							border: 11px solid transparent;
 						}
 						&.active {
 							&::before {
@@ -1110,10 +1111,11 @@
 	}
 }
 
-.footer {
+footer.footer {
 	background: $orange;
 	color: $white;
 	min-height: 220px;
+	position: relative;
 	&::before {
 		content: "";
 		display: block;
@@ -1164,12 +1166,5 @@
 				}
 			}
 		}
-	}
-}
-
-
-@media only screen and (max-width: 960px) {
-	.wrapper {
-		width: calc();
 	}
 }
